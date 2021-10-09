@@ -42,9 +42,11 @@ def test_report_for_multiple_responses_ordered_by_count(results_report):
 def test_answers_for_multiple_responses(results_report):
     report_data = results_report.answers()
     assert report_data == [
+        [""],
         ["Q1"],
         ["Correct 1.1, Correct 1.2", 2],
         ["Correct 1.1, Wrong", 1],
+        [""],
         ["Q2"],
         ["Correct 2", 2],
         ["Wrong", 1]
