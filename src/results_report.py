@@ -22,8 +22,8 @@ class ResultsReport:
         report = []
         answers_counters = ResultsCounter(self._questions).count_answers(self._answers)
         for question in self._questions:
-            report.append([''])
-            report.append([question])
+            report.append(['', ''])
+            report.append([question, ''])
             answers = answers_counters[question]
             sorted_answers = list(answers.keys())
             sorted_answers.sort()
